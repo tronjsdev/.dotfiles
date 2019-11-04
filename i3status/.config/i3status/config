@@ -1,0 +1,85 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+}
+
+order += "volume_status"
+#order += "ipv6"
+order += "wireless _first_"
+#order += "ethernet _first_"
+#order += "battery all"
+order += "cpu_temperature 0"
+order += "cpu_usage"
+order += "sysdata"
+#order += "disk /"
+#order += "load"
+
+order += "memory"
+order += "tztime local"
+
+cpu_temperature {
+    format = " %degrees °C"
+    #path   = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input"
+    path   = "/sys/class/hwmon/hwmon0/temp1_input"
+}
+
+volume_status {
+    format = "[\?if=is_input |] {percentage}%"
+    format_muted = "[\?if=is_input |] muted"
+}
+
+
+
+wireless _first_ {
+        #format_up = "W: (%quality at %essid) %ip"
+        format_up = " %essid - %quality"
+        format_down = "W: down"
+}
+
+ethernet _first_ {
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+
+battery all {
+        format = "%status %percentage %remaining"
+}
+
+disk "/" {
+        format = "%avail"
+}
+
+load {
+        format = "%1min"
+}
+
+cpu_usage {
+        format = "CPU %usage"
+        separator = false
+}
+
+memory {
+        #format = "MEM %used | %available"
+        format = "MEM %used"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+        format = "%Y-%m-%d %I:%M%P |"
+}
+
+# customize per cpu padding, precision, etc
+sysdata {
+    format = "/ {cpu_freq_avg}GHz"
+    #separator = false
+    #format_cpu = "[\?min_length=4 [\?color=used_percent {used_percent:.0f}%]]"
+}
