@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 quote() {
-    local q="$(printf '%q ' "$@")"
-    printf '%s' "${q% }"
+	local q="$(printf '%q ' "$@")"
+	printf '%s' "${q% }"
 }
 
 hc_quoted="$(quote "${herbstclient_command[@]:-herbstclient}")"
@@ -24,11 +24,10 @@ panel_height=16
 font="-xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1"
 #font="xft:mononoki:pixelsize=18"
 bgcolor=$(hc get frame_border_normal_color)
-selbg=$(hc get window_border_active_color)
-#selbg=$(hc get frame_border_normal_color)
+#selbg=$(hc get window_border_active_color)
+selbg=$(hc get frame_border_normal_color)
 #selfg='#101010'
-selfg='#ffffff'
-#selfg=$(hc get window_border_active_color)
+selfg=$(hc get window_border_active_color)
 separatorfg=$(hc get window_border_active_color)
 
 icons=/usr/share/icons/stlarch_icons

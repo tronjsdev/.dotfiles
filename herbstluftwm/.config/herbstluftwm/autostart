@@ -2,6 +2,7 @@
 
 # this is a simple config for herbstluftwm
 
+#herbstclient silent new_attr bool my_not_first_autostart
 
 
 hc() {
@@ -10,6 +11,8 @@ hc() {
 
 # use example script from:
 src='/usr/share/doc/herbstluftwm/examples/'
+ICONS='/usr/share/icons/stlarch_icons'
+
 
 hc emit_hook reload
 
@@ -18,9 +21,13 @@ xsetroot -solid '#5A8E3A'
 # remove all existing keybindings
 hc keyunbind --all
 
-# Auto run apps
-killall stalonetray
-source ~/bin/autorun.sh
+if hc silent new_attr bool my_not_first_autostart ; then
+    # Auto run apps
+    killall stalonetray
+    hc spawn ~/bin/autorun.sh
+    firefox &
+fi
+
 
 # keybindings
 # if you have a super key you will be much happier with Mod set to Mod4
@@ -97,8 +104,9 @@ hc keybind $Mod-Control-Up      resize up +$resizestep
 hc keybind $Mod-Control-Right   resize right +$resizestep
 
 # tags
-tag_names=( {1..9} )
-tag_keys=( {1..9} 0 )
+#^i(${ICONS}/arch1.xbm)
+tag_names=( "1:TERM" "2:DEV" "3:WWW" "4:FILES" "5:PLAY" "6:MISC" )
+tag_keys=( {1..6} 0 )
 
 hc rename default "${tag_names[0]}" || true
 for i in ${!tag_names[@]} ; do
@@ -143,36 +151,45 @@ hc keybind $Mod-i jumpto urgent
 # theme
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
+
 hc set frame_border_active_color '#222222'
 hc set frame_border_normal_color '#101010'
-hc set frame_bg_normal_color '#565656'
-hc set frame_bg_active_color '#345F0C'
+hc set frame_bg_normal_color '#2d4159'
+hc set frame_bg_active_color '#0677a1'
+
 hc set frame_border_width 1
 hc set always_show_frame 1
 hc set frame_bg_transparent 1
 hc set frame_transparent_width 5
-hc set frame_gap 4
+hc set frame_gap 8
+
 
 hc set wmname LG3D
 
-hc attr theme.active.color '#9fbc00'
-hc attr theme.normal.color '#454545'
+hc attr theme.active.color '#0049FF'
+hc attr theme.normal.color '#2d4159'
+
 hc attr theme.urgent.color orange
+
 hc attr theme.inner_width 1
 hc attr theme.inner_color black
+
 hc attr theme.border_width 3
+
 hc attr theme.floating.border_width 4
 hc attr theme.floating.outer_width 1
 hc attr theme.floating.outer_color black
-hc attr theme.active.inner_color '#3E4A00'
-hc attr theme.active.outer_color '#3E4A00'
-hc attr theme.background_color '#141414'
+
+hc attr theme.active.inner_color '#222222'
+hc attr theme.active.outer_color '#222222'
+hc attr theme.background_color '#141E27'
 
 hc set window_gap 0
 hc set frame_padding 0
-hc set smart_window_surroundings 0
-hc set smart_frame_surroundings 1
+hc set smart_window_surroundings 1
+hc set smart_frame_surroundings 0
 hc set mouse_recenter_gap 0
+hc set default_frame_layout 1
 
 # rules
 hc unrule -F
@@ -186,6 +203,10 @@ hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 
 hc set tree_style '╾│ ├└╼─┐'
+
+#I set default_frame_layout to my favorite layout but it doesn’t work with the root frame/existing frames?
+hc split vertical 0.5
+hc remove
 
 # unlock, just to be sure
 hc unlock
