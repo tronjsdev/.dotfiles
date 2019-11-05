@@ -20,7 +20,7 @@ new_float normal
 hide_edge_borders none
 
 # change borders
-bindsym $mod+u border none
+#bindsym $mod+u border none
 bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
@@ -84,7 +84,7 @@ bindsym $mod+Ctrl+m exec urxvt -e 'alsamixer'
 # Start Applications
 # ---------------------------------------------------
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F1 exec pamac-manager
+bindsym $mod+F1 exec subl3
 bindsym $mod+F2 exec webstorm
 bindsym $mod+F9 exec google-chrome-stable
 bindsym $mod+F4 exec nemo
@@ -116,10 +116,10 @@ show_marks yes
 # ---------------------------------------------------
 # change focus
 # ---------------------------------------------------
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -134,10 +134,10 @@ bindsym $mod+Right focus right
 # ---------------------------------------------------
 # move focused window
 # ---------------------------------------------------
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -157,8 +157,8 @@ bindsym $mod+Tab 	workspace back_and_forth
 # ---------------------------------------------------
 # split orientation
 # ---------------------------------------------------
-bindsym $mod+h split h;exec notify-send 'tile horizontally'
-bindsym $mod+v split v;exec notify-send 'tile vertically'
+bindsym $mod+u split h;exec notify-send 'tile horizontally'
+bindsym $mod+o split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
 # ---------------------------------------------------
@@ -196,7 +196,8 @@ bindsym $mod+minus scratchpad show
 # ---------------------------------------------------
 # navigate workspaces next / previous
 # ---------------------------------------------------
-bindsym $mod+Escape workspace next
+bindsym $mod+period workspace next
+bindsym $mod+comma workspace prev
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
@@ -206,17 +207,17 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1: 1:terminal
-set $ws2 2: 2:dev
-set $ws3 3: 3:web
-set $ws4 4: 4:files
-set $ws5 5: 5:relax
+set $ws1 1: 1:TERM
+set $ws2 2: 2:DEV
+set $ws3 3: 3:WWW
+set $ws4 4: 4:FILES
+set $ws5 5: 5:PLAY
 #set $ws1 1:1:terminal
 #set $ws2 2:2:code
 #set $ws3 3:3:web
 #set $ws4 4:4:files
 #set $ws5 5:5:relax
-set $ws6 6: 6:virtual box
+set $ws6 6: 6:VMs
 set $ws7 7:7
 set $ws8 8:8
 
@@ -364,12 +365,12 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (h)ibernate, (r)eboot, (s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id ~/data/etc/i3-stuff/scripts/i3exit.sh lock, mode "default"
-    bindsym s exec --no-startup-id ~/data/etc/i3-stuff/scripts/i3exit.sh suspend, mode "default"
-    bindsym u exec --no-startup-id ~/data/etc/i3-stuff/scripts/i3exit.sh switch_user, mode "default"
-    bindsym e exec --no-startup-id ~/data/etc/i3-stuff/scripts/i3exit.sh logout, mode "default"
-    bindsym h exec --no-startup-id ~/data/etc/i3-stuff/scripts/i3exit.sh hibernate, mode "default"
-    bindsym r exec --no-startup-id ~/data/etc/i3-stuff/scripts/i3exit.sh reboot, mode "default"
+    bindsym l exec --no-startup-id ~/bin/i3exit.sh lock, mode "default"
+    bindsym s exec --no-startup-id ~/bin/i3exit.sh suspend, mode "default"
+    bindsym u exec --no-startup-id ~/bin/i3exit.sh switch_user, mode "default"
+    bindsym e exec --no-startup-id ~/bin/i3exit.sh logout, mode "default"
+    bindsym h exec --no-startup-id ~/bin/i3exit.sh hibernate, mode "default"
+    bindsym r exec --no-startup-id ~/bin/i3exit.sh reboot, mode "default"
     bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
     # exit system mode: "Enter" or "Escape"
@@ -424,13 +425,13 @@ exec google-chrome-stable
 
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 # exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
-exec --no-startup-id xrandr --output LVDS-0 --off
+#exec --no-startup-id xrandr --output LVDS-0 --off
 #exec --no-startup-id xrandr --output VGA-0 --off --output LVDS-0 --off --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-6 --off
 exec --no-startup-id nvidia-settings -a [gpu:0]/GPUPowerMizerMode=1
 exec --no-startup-id keepassxc
@@ -503,23 +504,23 @@ bar {
 	#font pango:Iosevka, Font Awesome 5 Free, Icons 12
 	
 	#font pango:Input, Font Awesome 5 Free:style=Solid, Material Icons 10
-	font pango:Input, Font Awesome 5 Free 10
+	font pango:mononoki, Font Awesome 5 Free 10
   
 	#font pango:Font Awesome 5 Free
 	
-	#separator_symbol            "::"
+	separator_symbol            ""
 	
 	strip_workspace_numbers yes
 
     colors {
-        background #222D31
-        statusline #F9FAF9
-        separator  #454947
+        background #101010
+        statusline #909090
+        separator  #006BFF
 
-#                          border  backgr. text
-        #focused_workspace  #F9FAF9 #007aff #ffffff
+#                           border  backgr. text
+        focused_workspace   #006BFF #000000 #006BFF
         #active_workspace   #595B5B #353836 #FDF6E3
-        #inactive_workspace #595B5B #222D31 #96A4A5
+        inactive_workspace  #595B5B #222D31 #96A4A5
         #binding_mode       #16a085 #2C2C2C #F9FAF9
         #urgent_workspace   #16a085 #FDF6E3 #E5201D
 
@@ -553,11 +554,11 @@ bindsym $mod+m bar mode toggle
 
 
   # class                 		border  backgr. text    indicator child_border
-	client.focused          	#4c7899 #285577 #ffffff #2e9ef4   #001eff
+	client.focused          	#4c7899 #285577 #ffffff #2e9ef4   #0049FF
 	#client.focused          	#4c7899 #285577 #ffffff #2e9ef4   #285577
 	#client.focused_inactive 	#333333 #5f676a #ffffff #484e50   #5f676a
 	client.focused_inactive 	#718992 #5f676a #ffffff #484e50   #5f676a
-	client.unfocused        	#333333 #222222 #888888 #292d2e   #222222
+	client.unfocused        	#333333 #222222 #888888 #292d2e   #2d4159
 	#client.unfocused        	#4c7899 #222222 #888888 #292d2e   #222222
 	client.urgent           	#2f343a #900000 #ffffff #900000   #900000
 	client.placeholder      	#000000 #0c0c0c #ffffff #000000   #0c0c0c
@@ -623,3 +624,4 @@ mode "$mode_gaps_outer" {
 
 
 exec --no-startup-id i3-msg workspace $ws1
+exec --no-startup-id i3-msg workspace $ws3

@@ -25,22 +25,22 @@ order += "sysdata"
 order += "memory"
 order += "tztime local"
 
-cpu_temperature {
-    format = " %degrees °C"
+cpu_temperature 0 {
+    format = "  %degrees°C "
     #path   = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input"
-    path   = "/sys/class/hwmon/hwmon0/temp1_input"
+    #path   = "/sys/class/hwmon/hwmon0/temp1_input"
 }
 
 volume_status {
-    format = "[\?if=is_input |] {percentage}%"
-    format_muted = "[\?if=is_input |] muted"
+    format = "[\?if=is_input |] {percentage}% "
+    format_muted = "[\?if=is_input |] muted "
 }
 
 
 
 wireless _first_ {
         #format_up = "W: (%quality at %essid) %ip"
-        format_up = " %essid - %quality"
+        format_up = "  %essid - %quality "
         format_down = "W: down"
 }
 
@@ -62,24 +62,24 @@ load {
 }
 
 cpu_usage {
-        format = "CPU %usage"
+        format = " CPU %usage"
         separator = false
 }
 
 memory {
         #format = "MEM %used | %available"
-        format = "MEM %used"
+        format = " MEM %used "
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
 tztime local {
-        format = "%Y-%m-%d %I:%M%P |"
+        format = " %Y-%m-%d %I:%M%P |"
 }
 
 # customize per cpu padding, precision, etc
 sysdata {
-    format = "/ {cpu_freq_avg}GHz"
+    format = "/ {cpu_freq_avg}GHz "
     #separator = false
     #format_cpu = "[\?min_length=4 [\?color=used_percent {used_percent:.0f}%]]"
 }
