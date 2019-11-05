@@ -221,5 +221,4 @@ done
 if hc silent new_attr bool my_not_first_autostart ; then
     # Auto run apps
     hc spawn ~/bin/autorun.sh
-    hc spawn firefox &
 fi
