@@ -309,11 +309,12 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 !  URxvt
 ! ------------------------------------------------------------------------------
 
-!*foreground:   base05
-!*background:   base00
+*foreground:   base05
+*background:   base00
+*fadeColor:		base00
 !*cursorColor:  base05
 
-!*color0:       base00
+*color0:       base00
 !*color1:       base08
 !*color2:       base0B
 !*color3:       base0A
@@ -348,7 +349,7 @@ URxvt.intensityStyles     : false
 
 
 URxvt.perl-ext-common : default,matcher
-URxvt.url-launcher    : firefox
+URxvt.url-launcher    : google-chrome-stable
 URxvt.matcher.button  : 1
 
 
