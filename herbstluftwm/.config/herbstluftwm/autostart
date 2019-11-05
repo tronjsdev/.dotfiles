@@ -21,13 +21,6 @@ xsetroot -solid '#5A8E3A'
 # remove all existing keybindings
 hc keyunbind --all
 
-if hc silent new_attr bool my_not_first_autostart ; then
-    # Auto run apps
-    killall stalonetray
-    hc spawn ~/bin/autorun.sh
-    firefox &
-fi
-
 
 # keybindings
 # if you have a super key you will be much happier with Mod set to Mod4
@@ -105,8 +98,8 @@ hc keybind $Mod-Control-Right   resize right +$resizestep
 
 # tags
 #^i(${ICONS}/arch1.xbm)
-tag_names=( "1:TERM" "2:DEV" "3:WWW" "4:FILES" "5:PLAY" "6:MISC" )
-tag_keys=( {1..6} 0 )
+tag_names=( "1:TERM" "2:DEV" "3:WWW" "4:FILES" "5:PLAY" "6:MISC" "7" "8" "9" )
+tag_keys=( {1..9} 0 )
 
 hc rename default "${tag_names[0]}" || true
 for i in ${!tag_names[@]} ; do
@@ -223,3 +216,10 @@ for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
     # start it on each monitor
     "$panel" $monitor &
 done
+
+
+if hc silent new_attr bool my_not_first_autostart ; then
+    # Auto run apps
+    hc spawn ~/bin/autorun.sh
+    hc spawn firefox &
+fi
