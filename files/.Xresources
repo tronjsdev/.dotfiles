@@ -5,15 +5,15 @@
 #define t_bg_bump      #2B2A27
 #define t_fg_comment   #68696C
 #define t_foreground   #8E8F93
-#define t_fg_highlight #9D9EA2
+#define t_fg_highlight #073642
 #define t_fg_ceiling   #FEFFFF
 
 *background: t_background
 *foreground: t_foreground
 
-URxvt.colorBD: t_fg_highlight
-URxvt.colorIT: t_fg_highlight
-URxvt.colorUL: t_fg_highlight
+!URxvt.colorBD: t_fg_highlight
+!URxvt.colorIT: t_fg_highlight
+!URxvt.colorUL: t_fg_highlight
 
 URxvt.cursorColor: #81A0D9
 
@@ -34,8 +34,8 @@ URxvt.cursorColor: #81A0D9
 *color11: #AE9D62
 
 ! GRN
-! *color2: #38754B
-*color2: #8AE234
+!*color2: #38754B
+*color2: #73D216
 *color10: #6EAC7E
 
 ! CYN
@@ -437,7 +437,7 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! URxvt*internalBorder:             number
 ! URxvt*borderLess:                 true
 ! URxvt*lineSpace:                  number
-! URxvt*letterSpace:                number
+  URxvt*letterSpace:                -1
 ! URxvt*skipBuiltinGlyphs:          boolean
 ! URxvt*pointerBlankDelay:          number
 ! URxvt*backspacekey:               string
