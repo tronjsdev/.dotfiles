@@ -47,7 +47,7 @@ else
 fi
 
 xrandr --dpi 96
-source ~/bin/autorun.sh
+#source ~/bin/autorun.sh
 
 get_session(){
 	local dbus_args=(--sh-syntax --exit-with-session)
@@ -79,12 +79,13 @@ get_session(){
 #exec awesome
 #exec ~/.config/dwm/startdwm
 #exec bspwm
-#exec startxfce4
+exec startxfce4
 #exec herbstluftwm
-exec spectrwm
+#exec spectrwm
 #exec /usr/bin/ratpoison
 #exec ion3
 #exec openbox-session
 #exec notion
 #exec xmonad
 #exec 2bwm
+#exec startfluxbox

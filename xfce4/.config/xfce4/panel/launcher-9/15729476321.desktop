@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WebStorm
+Icon=/home/tronjs/data/apps/WebStorm/bin/webstorm.svg
+Exec="/home/tronjs/data/apps/WebStorm/bin/webstorm.sh" %f
+Comment=The smartest JavaScript IDE
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-webstorm
+X-XFCE-Source=file:///usr/local/share/applications/jetbrains-webstorm.desktop
