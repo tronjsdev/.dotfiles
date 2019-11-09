@@ -3,7 +3,7 @@ killall compton
 killall nitrogen
 killall alttab
 killall dunst
-killall ibus-daemon
+#killall ibus-daemon
 killall nm-applet
 killall pamac-tray
 killall polkit-mate-aut
@@ -11,9 +11,9 @@ killall volumeicon
 killall stalonetray
 
 alttab -fg "#9EB7C0" -bg "#222D31" -frame "#0049FF" -t 128x150 -i 127x64 &
-xset b off
-ibus-daemon -drx &
-nvidia-settings -a [gpu:0]/GPUPowerMizerMode=1 &
+#xset b off
+#ibus-daemon -drx &
+#nvidia-settings -a [gpu:0]/GPUPowerMizerMode=1 &
 nitrogen --restore; sleep 1
 #feh --bg-scale ~/wallpaper.jpg &
 compton -bC &

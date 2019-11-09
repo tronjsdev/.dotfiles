@@ -47,6 +47,9 @@ else
 fi
 
 xrandr --dpi 96
+xset b off
+ibus-daemon -drx &
+nvidia-settings -a [gpu:0]/GPUPowerMizerMode=1 &
 #source ~/bin/autorun.sh
 
 get_session(){
