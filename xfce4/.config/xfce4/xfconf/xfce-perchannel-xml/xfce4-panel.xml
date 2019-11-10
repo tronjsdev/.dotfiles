@@ -4,19 +4,26 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
-    <value type="int" value="2"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="position" type="string" value="p=8;x=960;y=1066"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="icon-size" type="uint" value="16"/>
-      <property name="size" type="uint" value="26"/>
+      <property name="icon-size" type="uint" value="24"/>
+      <property name="size" type="uint" value="34"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
+        <value type="int" value="10"/>
+        <value type="int" value="5"/>
+        <value type="int" value="8"/>
+        <value type="int" value="4"/>
+        <value type="int" value="15"/>
+        <value type="int" value="9"/>
+        <value type="int" value="19"/>
+        <value type="int" value="17"/>
+        <value type="int" value="16"/>
+        <value type="int" value="18"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
-        <value type="int" value="4"/>
-        <value type="int" value="5"/>
         <value type="int" value="6"/>
         <value type="int" value="11"/>
         <value type="int" value="1"/>
@@ -24,25 +31,7 @@
         <value type="int" value="13"/>
         <value type="int" value="14"/>
       </property>
-    </property>
-    <property name="panel-2" type="empty">
-      <property name="autohide-behavior" type="uint" value="1"/>
-      <property name="position" type="string" value="p=10;x=0;y=0"/>
-      <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="48"/>
-      <property name="plugin-ids" type="array">
-        <value type="int" value="15"/>
-        <value type="int" value="16"/>
-        <value type="int" value="23"/>
-        <value type="int" value="18"/>
-        <value type="int" value="19"/>
-        <value type="int" value="9"/>
-        <value type="int" value="10"/>
-        <value type="int" value="20"/>
-        <value type="int" value="21"/>
-        <value type="int" value="22"/>
-        <value type="int" value="8"/>
-      </property>
+      <property name="mode" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -50,20 +39,22 @@
       <property name="grouping" type="uint" value="0"/>
       <property name="flat-buttons" type="bool" value="false"/>
       <property name="sort-order" type="uint" value="4"/>
+      <property name="show-handle" type="bool" value="true"/>
+      <property name="show-labels" type="bool" value="true"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-4" type="string" value="pager">
-      <property name="rows" type="uint" value="1"/>
+      <property name="rows" type="uint" value="2"/>
     </property>
     <property name="plugin-5" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
+      <property name="style" type="uint" value="1"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="show-frame" type="bool" value="false"/>
-      <property name="square-icons" type="bool" value="true"/>
+      <property name="square-icons" type="bool" value="false"/>
       <property name="names-ordered" type="array">
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="ibus panel"/>
@@ -73,6 +64,7 @@
         <value type="string" value="skypeforlinux"/>
         <value type="string" value="shutter"/>
       </property>
+      <property name="size-max" type="uint" value="18"/>
     </property>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -80,54 +72,49 @@
     <property name="plugin-12" type="string" value="clock">
       <property name="digital-format" type="string" value="%I:%M %p"/>
       <property name="tooltip-format" type="string" value="%A %x"/>
+      <property name="mode" type="uint" value="2"/>
     </property>
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-14" type="string" value="actions"/>
-    <property name="plugin-15" type="string" value="showdesktop"/>
-    <property name="plugin-16" type="string" value="separator"/>
+    <property name="plugin-7" type="string" value="whiskermenu"/>
+    <property name="plugin-1" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chrome.instance1036;chrome.instance15197;chrome.instance2199;smplayer"/>
+    </property>
+    <property name="plugin-8" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-9" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15732984191.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-10" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-15" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-17" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15732985783.desktop"/>
+      </property>
+    </property>
     <property name="plugin-18" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15720709812.desktop"/>
+        <value type="string" value="15732985924.desktop"/>
       </property>
     </property>
     <property name="plugin-19" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15720709813.desktop"/>
+        <value type="string" value="15732986495.desktop"/>
       </property>
     </property>
-    <property name="plugin-20" type="string" value="launcher">
+    <property name="plugin-16" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15720709814.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-21" type="string" value="separator"/>
-    <property name="plugin-22" type="string" value="directorymenu">
-      <property name="base-directory" type="string" value="/home/tronjs"/>
-    </property>
-    <property name="plugin-7" type="string" value="whiskermenu"/>
-    <property name="plugin-1" type="string" value="pulseaudio">
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chrome.instance15197;smplayer"/>
-    </property>
-    <property name="plugin-8" type="string" value="directorymenu">
-      <property name="base-directory" type="string" value="/home/tronjs/data"/>
-      <property name="icon-name" type="string" value="folder-templates"/>
-    </property>
-    <property name="plugin-9" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="15729476321.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-10" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="15732926491.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-23" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="15732947221.desktop"/>
+        <value type="string" value="15733180291.desktop"/>
       </property>
     </property>
   </property>

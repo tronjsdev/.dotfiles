@@ -1,1 +1,4 @@
 WebBrowser=google-chrome
+TerminalEmulator=urxvt
+FileManager=custom-FileManager
+

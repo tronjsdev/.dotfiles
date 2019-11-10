@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=urxvt-tabbed.desktop,xfce-settings-manager.desktop,nvidia-settings.desktop,xfce-session-settings.desktop,org.gnome.DiskUtility.desktop,xfce-wm-settings.desktop,sublime_text_3.desktop,jetbrains-webstorm.desktop,xfce-ui-settings.desktop,exo-mail-reader.desktop
+recent=speedcrunch.desktop,xfce-mouse-settings.desktop,htop.desktop,uxterm.desktop,conky.desktop,exo-preferred-applications.desktop,pcmanfm.desktop,xfce4-color-settings.desktop,exo-file-manager.desktop,urxvt-tabbed.desktop
 button-title=Applications
 button-icon=distributor-logo-archlinux
 button-single-row=false
@@ -21,8 +21,8 @@ position-commands-alternate=false
 position-categories-alternate=false
 stay-on-focus-out=false
 confirm-session-command=true
-menu-width=400
-menu-height=500
+menu-width=490
+menu-height=602
 menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true
