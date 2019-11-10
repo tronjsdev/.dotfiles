@@ -18,6 +18,7 @@
         <value type="int" value="4"/>
         <value type="int" value="15"/>
         <value type="int" value="9"/>
+        <value type="int" value="20"/>
         <value type="int" value="19"/>
         <value type="int" value="17"/>
         <value type="int" value="16"/>
@@ -81,7 +82,7 @@
     <property name="plugin-7" type="string" value="whiskermenu"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chrome.instance1036;chrome.instance15197;chrome.instance2199;smplayer"/>
+      <property name="mpris-players" type="string" value="chrome.instance1036;chrome.instance1194;chrome.instance15197;chrome.instance2199;smplayer"/>
     </property>
     <property name="plugin-8" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -115,6 +116,11 @@
     <property name="plugin-16" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="15733180291.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-20" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15733895921.desktop"/>
       </property>
     </property>
   </property>

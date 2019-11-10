@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=urxvt
+Comment=An unicode capable rxvt clone
+Exec=urxvt
+Icon=xterm
+Terminal=false
+Type=Application
+Categories=System;TerminalEmulator;
+X-XFCE-Source=file:///usr/share/applications/urxvt.desktop
+Path=
+StartupNotify=false

@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=speedcrunch.desktop,xfce-mouse-settings.desktop,htop.desktop,uxterm.desktop,conky.desktop,exo-preferred-applications.desktop,pcmanfm.desktop,xfce4-color-settings.desktop,exo-file-manager.desktop,urxvt-tabbed.desktop
+recent=xfce-settings-manager.desktop,speedcrunch.desktop,xfce-mouse-settings.desktop,htop.desktop,uxterm.desktop,conky.desktop,exo-preferred-applications.desktop,pcmanfm.desktop,xfce4-color-settings.desktop,exo-file-manager.desktop
 button-title=Applications
 button-icon=distributor-logo-archlinux
 button-single-row=false
