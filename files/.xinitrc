@@ -34,8 +34,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-#wmname LG3D
-#nvidia-settings -a [gpu:0]/GPUPowerMizerMode=1 &
 
 IN=$(xrandr | grep "LVDS-0" | grep " connected" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/")
 EXT=$(xrandr | grep "DP-5" | grep " connected" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/")
@@ -50,6 +48,7 @@ xrandr --dpi 96
 xset b off
 ibus-daemon -drx &
 nvidia-settings -a [gpu:0]/GPUPowerMizerMode=1 &
+wmname LG3D
 #source ~/bin/autorun.sh
 
 get_session(){
@@ -81,9 +80,9 @@ get_session(){
 #exec $(get_session)
 #exec awesome
 #exec ~/.config/dwm/startdwm
-exec bspwm
+#exec bspwm
 #exec startxfce4
-#exec herbstluftwm
+exec herbstluftwm
 #exec spectrwm
 #exec /usr/bin/ratpoison
 #exec ion3
