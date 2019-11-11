@@ -27,7 +27,7 @@ hc keyunbind --all
 # if you have a super key you will be much happier with Mod set to Mod4
 #Mod=Mod1    # Use alt as the main modifier
 Mod=Mod4   # Use the super key as the main modifier
-TERMINAL=urxvt
+TERMINAL=xfce4-terminal
 
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
@@ -41,12 +41,13 @@ hc keybind $Mod-d spawn rofi -show run
 hc keybind $Mod-F11 spawn ~/.config/herbstluftwm/restartpanels.sh
 hc keybind $Mod-grave        use_previous
 
-hc keybind $Mod-Up   spawn amixer -q sset Master 1+
-hc keybind $Mod-Down spawn amixer -q sset Master 1-
+hc keybind $Mod-Page_Up   spawn amixer -q sset Master 2%+
+hc keybind $Mod-Page_Down spawn amixer -q sset Master 2%-
 
 # keybind apps
 hc keybind Control-Alt-Shift-8 spawn keepassxc
 hc keybind $Mod-Control+m spawn urxvt -e 'alsamixer'
+hc keybind $Mod-F12 spawn webstorm
 
 
 # herbstcommander
@@ -114,6 +115,7 @@ for i in ${!tag_names[@]} ; do
 done
 
 # cycle through tags
+hc keybind $Mod-Escape use_index +1 --skip-visible
 hc keybind $Mod-period use_index +1 --skip-visible
 hc keybind $Mod-comma  use_index -1 --skip-visible
 
@@ -121,6 +123,7 @@ hc keybind $Mod-comma  use_index -1 --skip-visible
 hc keybind $Mod-r remove
 hc keybind $Mod-s floating toggle
 hc keybind $Mod-f fullscreen toggle
+hc keybind $Mod-m fullscreen toggle
 hc keybind $Mod-t cycle_layout +1 max
 hc keybind $Mod-Control-p pseudotile toggle
 # The following cycles through the available layouts within a frame, but skips
@@ -142,7 +145,6 @@ hc keybind $Mod-BackSpace   cycle_monitor
 hc keybind $Mod-Tab         cycle_all +1
 hc keybind $Mod-Shift-Tab   cycle_all -1
 hc keybind $Mod-c cycle
-hc keybind $Mod-Escape cycle
 hc keybind $Mod-i jumpto urgent
 
 # theme
@@ -196,9 +198,12 @@ hc rule focus=on # normally focus new clients
 # give focus to most common terminals
 #hc rule class~'(.*[Rr]xvt.*|.*[Tt]erm|Konsole)' focus=on
 hc rule class~'tilix' pseudotile=on
+
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' pseudotile=on
 hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
+
+hc rule class~'jetbrains-webstorm' pseudotile=on
 
 hc set tree_style '╾│ ├└╼─┐'
 
