@@ -317,6 +317,7 @@ XTerm*selectToClipboard: true
 Xcursor.theme	 : Adwaita
 Xcursor.size 	 : 0
 
+
 URxvt.font       : xft:mononoki:size=12:style=Regular
 URxvt.italicFont : xft:mononoki:size=12:style=Italic
 URxvt.boldFont   : xft:mononoki:size=12:style=Bold
@@ -357,7 +358,7 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! URxvt.keysym.M-v:                 perl:clipboard:paste
 ! URxvt.keysym.M-C-v:               perl:clipboard:paste_escaped
 ! URxvt*termName:                   string
-  URxvt*geometry:                   110x30
+  URxvt*geometry:                   90x30
   URxvt.tabbed.geometry:                   110x30
 ! URxvt*chdir:                      string
 ! URxvt*loginShell:                 boolean
