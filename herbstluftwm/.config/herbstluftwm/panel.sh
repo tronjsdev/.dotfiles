@@ -22,7 +22,7 @@ panel_height=16
 #font="-xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1"
 #font="-xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1"
 font="-xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1"
-#font="xft:mononoki:pixelsize=18"
+#font="CodingFontTobi-12"
 bgcolor=$(hc get frame_border_normal_color)
 selbg=$(hc get window_border_active_color)
 #selbg=$(hc get frame_border_normal_color)

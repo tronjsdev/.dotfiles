@@ -115,7 +115,6 @@ for i in ${!tag_names[@]} ; do
 done
 
 # cycle through tags
-hc keybind $Mod-Escape use_index +1 --skip-visible
 hc keybind $Mod-period use_index +1 --skip-visible
 hc keybind $Mod-comma  use_index -1 --skip-visible
 
@@ -144,8 +143,9 @@ hc mousebind $Mod-Button3 resize
 hc keybind $Mod-BackSpace   cycle_monitor
 hc keybind $Mod-Tab         cycle_all +1
 hc keybind $Mod-Shift-Tab   cycle_all -1
-hc keybind $Mod-c cycle
-hc keybind $Mod-i jumpto urgent
+hc keybind $Mod-c           cycle
+hc keybind $Mod-Escape      cycle
+hc keybind $Mod-i           jumpto urgent
 
 # theme
 hc attr theme.tiling.reset 1
