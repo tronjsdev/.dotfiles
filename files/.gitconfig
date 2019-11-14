@@ -1,3 +1,5 @@
 [user]
 	email = tronjs.dev@gmail.com
 	name = tronjsdev
+[core]
+	autocrlf = input
