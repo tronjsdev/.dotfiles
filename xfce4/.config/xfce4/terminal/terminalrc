@@ -26,13 +26,13 @@ MiscSlimTabs=TRUE
 MiscNewTabAdjacent=FALSE
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
-FontName=ProggyCleanTTSZBP 12
+FontName=GohuNew Medium 11
 ColorForeground=#718CA1
 ColorBackground=#1D252C
 ColorPalette=#282828;#cc241d;#98971a;#d79921;#458588;#b16286;#689d6a;#a89984;#928374;#fb4934;#b8bb26;#fabd2f;#83a598;#d3869b;#8ec07c;#ebdbb2
-TabActivityColor=#bf4040
 TextBlinkMode=TERMINAL_TEXT_BLINK_MODE_NEVER
 ColorBold=#00afff
 ColorBoldUseDefault=FALSE
+TabActivityColor=#bf4040
 FontAllowBold=FALSE
 

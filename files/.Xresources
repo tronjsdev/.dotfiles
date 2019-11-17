@@ -75,7 +75,8 @@ Xcursor.size 	 : 0
 
 
 !URxvt.font       : xft:mononoki:size=12:style=Regular
-URxvt.font       : xft:ProggyCleanTTSZBP:size=12:style=Regular
+!URxvt.font       : xft:ProggyCleanTTSZBP:size=12:style=Regular
+URxvt.font       : xft:envypn:size=12:style=Regular
 URxvt.italicFont : xft:ProggyCleanTTSZBP:size=12:style=Italic
 URxvt.boldFont   : xft:ProggyCleanTTSZBP:size=12:style=Bold
 
