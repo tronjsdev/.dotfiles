@@ -21,7 +21,9 @@
         <value type="int" value="20"/>
         <value type="int" value="19"/>
         <value type="int" value="17"/>
+        <value type="int" value="21"/>
         <value type="int" value="16"/>
+        <value type="int" value="22"/>
         <value type="int" value="18"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
@@ -33,6 +35,14 @@
         <value type="int" value="14"/>
       </property>
       <property name="mode" type="uint" value="0"/>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.180392"/>
+        <value type="double" value="0.203922"/>
+        <value type="double" value="0.211765"/>
+        <value type="double" value="1.000000"/>
+      </property>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -42,6 +52,10 @@
       <property name="sort-order" type="uint" value="4"/>
       <property name="show-handle" type="bool" value="true"/>
       <property name="show-labels" type="bool" value="true"/>
+      <property name="show-only-minimized" type="bool" value="false"/>
+      <property name="include-all-workspaces" type="bool" value="false"/>
+      <property name="window-scrolling" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="false"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -57,6 +71,7 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="false"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="deadbeef"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="ibus panel"/>
         <value type="string" value="pamac-tray"/>
@@ -82,7 +97,12 @@
     <property name="plugin-7" type="string" value="whiskermenu"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chrome.instance1036;chrome.instance1194;chrome.instance1407;chrome.instance15197;chrome.instance2199;smplayer"/>
+      <property name="mpris-players" type="string" value=""/>
+      <property name="show-notifications" type="bool" value="true"/>
+      <property name="enable-wnck" type="bool" value="false"/>
+      <property name="enable-multimedia-keys" type="bool" value="false"/>
+      <property name="enable-mpris" type="bool" value="true"/>
+      <property name="blacklisted-players" type="string" value=""/>
     </property>
     <property name="plugin-8" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -121,6 +141,16 @@
     <property name="plugin-9" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="15734475401.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-21" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15740860571.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-22" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15740860732.desktop"/>
       </property>
     </property>
   </property>

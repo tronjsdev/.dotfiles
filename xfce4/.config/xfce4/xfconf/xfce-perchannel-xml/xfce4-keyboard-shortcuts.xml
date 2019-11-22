@@ -31,7 +31,6 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
-      <property name="Print" type="string" value="xfce4-screenshooter"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;p" type="string" value="rofi -show drun"/>
       <property name="&lt;Alt&gt;F9" type="string" value="exo-open --launch WebBrowser"/>
@@ -44,6 +43,9 @@
       <property name="&lt;Super&gt;d" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Super&gt;Escape" type="string" value="tilix --quake"/>
       <property name="&lt;Super&gt;Return" type="string" value="xfce4-terminal"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;asterisk" type="string" value="keepassxc"/>
+      <property name="&lt;Super&gt;F9" type="string" value="firefox-developer-edition"/>
+      <property name="Print" type="string" value="shutter -s"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

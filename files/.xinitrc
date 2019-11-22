@@ -81,8 +81,8 @@ get_session(){
 #exec awesome
 #exec ~/.config/dwm/startdwm
 #exec bspwm
-#exec startxfce4
-exec herbstluftwm
+exec startxfce4
+#exec herbstluftwm
 #exec spectrwm
 #exec /usr/bin/ratpoison
 #exec ion3

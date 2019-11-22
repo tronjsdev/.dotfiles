@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=xfce-keyboard-settings.desktop,xfce4-terminal.desktop,kitty.desktop,xfce-settings-manager.desktop,speedcrunch.desktop,exo-terminal-emulator.desktop,xfce-mouse-settings.desktop,htop.desktop,uxterm.desktop,conky.desktop
+recent=org.gnome.FontManager.desktop,xfce-keyboard-settings.desktop,xfce-ui-settings.desktop,sonicwall-netextender.desktop,org.gnome.baobab.desktop,exo-mail-reader.desktop,xfce-settings-manager.desktop,org.keepassxc.KeePassXC.desktop,htop.desktop,SmartGit.desktop
 button-title=Applications
 button-icon=distributor-logo-archlinux
 button-single-row=false
@@ -11,7 +11,7 @@ launcher-show-tooltip=true
 item-icon-size=2
 hover-switch-category=false
 category-show-name=true
-category-icon-size=1
+category-icon-size=2
 load-hierarchy=false
 recent-items-max=10
 favorites-in-recent=true
