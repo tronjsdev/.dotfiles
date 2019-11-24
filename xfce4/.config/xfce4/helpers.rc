@@ -1,4 +1,4 @@
-WebBrowser=google-chrome
+WebBrowser=custom-WebBrowser
 TerminalEmulator=urxvt
 FileManager=custom-FileManager
 TerminalEmulatorDismissed=true

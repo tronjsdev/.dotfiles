@@ -2,7 +2,7 @@
 Name=Nemo
 Comment=Access and organize files
 Exec=nemo %U
-Icon=folder-blue-linux
+Icon=folder
 Keywords=folders;filesystem;explorer;
 Terminal=false
 Type=Application

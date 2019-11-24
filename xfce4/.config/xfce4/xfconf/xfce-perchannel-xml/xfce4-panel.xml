@@ -17,6 +17,7 @@
         <value type="int" value="8"/>
         <value type="int" value="4"/>
         <value type="int" value="15"/>
+        <value type="int" value="24"/>
         <value type="int" value="9"/>
         <value type="int" value="20"/>
         <value type="int" value="19"/>
@@ -71,6 +72,7 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="false"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="caja"/>
         <value type="string" value="deadbeef"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="ibus panel"/>
@@ -80,7 +82,7 @@
         <value type="string" value="skypeforlinux"/>
         <value type="string" value="shutter"/>
       </property>
-      <property name="size-max" type="uint" value="18"/>
+      <property name="size-max" type="uint" value="24"/>
     </property>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -150,8 +152,9 @@
     </property>
     <property name="plugin-22" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15740860732.desktop"/>
+        <value type="string" value="15744882621.desktop"/>
       </property>
     </property>
+    <property name="plugin-24" type="string" value="showdesktop"/>
   </property>
 </channel>

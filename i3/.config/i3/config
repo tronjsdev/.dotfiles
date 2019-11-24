@@ -86,7 +86,7 @@ bindsym $mod+Ctrl+m exec urxvt -e 'alsamixer'
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F1 exec subl3
 bindsym $mod+F2 exec webstorm
-bindsym $mod+F9 exec google-chrome-stable
+bindsym $mod+F9 exec firefox-developer-edition
 bindsym $mod+F4 exec nemo
 bindsym Ctrl+Mod1+Shift+8 exec keepassxc
 # bindsym $mod+F3 exec ranger

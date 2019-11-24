@@ -14,6 +14,8 @@ MimeType=text/html;text/xml;application/xhtml_xml;image/webp;x-scheme-handler/ht
 Actions=new-window;new-private-window;
 X-XFCE-Source=file:///usr/share/applications/google-chrome.desktop
 
+Path=
+
 [Desktop Action new-window]
 Name=New Window
 StartupWMClass=Google-chrome

@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=SmartGit.desktop,xfce-session-settings.desktop,org.gnome.FontManager.desktop,xfce-keyboard-settings.desktop,xfce-ui-settings.desktop,sonicwall-netextender.desktop,org.gnome.baobab.desktop,exo-mail-reader.desktop,xfce-settings-manager.desktop,org.keepassxc.KeePassXC.desktop
+recent=xdvi.desktop,exo-web-browser.desktop,thunar.desktop,pcmanfm.desktop,exo-file-manager.desktop,xfce-workspaces-settings.desktop,xfce-ui-settings.desktop,org.gnome.FontManager.desktop,skypeforlinux.desktop,smartsynchronize.desktop
 button-title=Applications
 button-icon=distributor-logo-archlinux
 button-single-row=false
