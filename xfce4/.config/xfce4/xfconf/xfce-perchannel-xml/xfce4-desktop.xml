@@ -100,4 +100,9 @@
     <property name="window-width" type="int" value="655"/>
     <property name="window-height" type="int" value="633"/>
   </property>
+  <property name="desktop-icons" type="empty">
+    <property name="file-icons" type="empty">
+      <property name="show-home" type="bool" value="false"/>
+    </property>
+  </property>
 </channel>

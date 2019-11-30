@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=xdvi.desktop,exo-web-browser.desktop,thunar.desktop,pcmanfm.desktop,exo-file-manager.desktop,xfce-workspaces-settings.desktop,xfce-ui-settings.desktop,org.gnome.FontManager.desktop,skypeforlinux.desktop,smartsynchronize.desktop
+recent=xfce-mouse-settings.desktop,SmartGit.desktop,xfce-backdrop-settings.desktop,avahi-discover.desktop,deadbeef.desktop,xfce4-terminal.desktop,svp-manager4.desktop,thunar-bulk-rename.desktop,com.gexperts.Tilix.desktop,xfce-ui-settings.desktop
 button-title=Applications
 button-icon=start-here
 button-single-row=false
@@ -21,8 +21,8 @@ position-commands-alternate=false
 position-categories-alternate=false
 stay-on-focus-out=false
 confirm-session-command=true
-menu-width=490
-menu-height=602
+menu-width=447
+menu-height=661
 menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true

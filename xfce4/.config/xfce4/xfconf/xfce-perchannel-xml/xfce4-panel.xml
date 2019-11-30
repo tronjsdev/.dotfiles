@@ -72,6 +72,9 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="false"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="qbittorrent"/>
+        <value type="string" value="svpmanager"/>
+        <value type="string" value="thunar"/>
         <value type="string" value="caja"/>
         <value type="string" value="deadbeef"/>
         <value type="string" value="networkmanager applet"/>
@@ -99,7 +102,7 @@
     <property name="plugin-7" type="string" value="whiskermenu"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value=""/>
+      <property name="mpris-players" type="string" value="chrome.instance1695;chrome.instance5705;smplayer"/>
       <property name="show-notifications" type="bool" value="true"/>
       <property name="enable-wnck" type="bool" value="false"/>
       <property name="enable-multimedia-keys" type="bool" value="false"/>
