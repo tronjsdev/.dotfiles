@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=xfce-mouse-settings.desktop,SmartGit.desktop,xfce-backdrop-settings.desktop,avahi-discover.desktop,deadbeef.desktop,xfce4-terminal.desktop,svp-manager4.desktop,thunar-bulk-rename.desktop,com.gexperts.Tilix.desktop,xfce-ui-settings.desktop
+recent=svp-manager4.desktop,xfce-mouse-settings.desktop,deadbeef.desktop,SmartGit.desktop,xfce-backdrop-settings.desktop,avahi-discover.desktop,xfce4-terminal.desktop,thunar-bulk-rename.desktop,com.gexperts.Tilix.desktop,xfce-ui-settings.desktop
 button-title=Applications
 button-icon=start-here
 button-single-row=false

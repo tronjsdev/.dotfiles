@@ -18,7 +18,7 @@ nitrogen --restore; sleep 1
 #feh --bg-scale ~/wallpaper.jpg &
 compton -bC &
 dunst &
-xinput set-prop 9 'libinput Accel Speed' 0.5 &
+xinput set-prop 9 'libinput Accel Speed' 0.8 &
 /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
 nm-applet &
 pamac-tray &

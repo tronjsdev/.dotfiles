@@ -125,6 +125,7 @@ hc keybind $Mod-f fullscreen toggle
 hc keybind $Mod-m fullscreen toggle
 hc keybind $Mod-t cycle_layout +1 max
 hc keybind $Mod-Control-p pseudotile toggle
+hc keybind $Mod-z pseudotile toggle
 # The following cycles through the available layouts within a frame, but skips
 # layouts, if the layout change wouldn't affect the actual window positions.
 # I.e. if there are two windows within a frame, the grid layout is skipped.
