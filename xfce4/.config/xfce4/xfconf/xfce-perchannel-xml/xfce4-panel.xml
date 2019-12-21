@@ -72,6 +72,7 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="false"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="redshift-gtk"/>
         <value type="string" value="qbittorrent"/>
         <value type="string" value="svpmanager"/>
         <value type="string" value="thunar"/>

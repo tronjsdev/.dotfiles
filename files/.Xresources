@@ -65,7 +65,7 @@ XTerm*background:        #1e262d
 XTerm*foreground:        #718CA1
 XTerm*pointerColor:      #1ABB9B
 !XTerm*faceName:          Fixed
-XTerm*faceSize:          12
+XTerm*faceSize:          16
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
 
@@ -74,11 +74,11 @@ Xcursor.theme	 : Adwaita
 Xcursor.size 	 : 0
 
 
-!URxvt.font       : xft:mononoki:size=12:style=Regular
+URxvt.font       : xft:monospace:style=Regular:size=22
 !URxvt.font       : xft:ProggyCleanTTSZBP:size=12:style=Regular
-URxvt.font       : xft:mononoki:size=12:style=Regular
-URxvt.italicFont : xft:mononoki:size=12:style=Italic
-URxvt.boldFont   : xft:mononoki:size=12:style=Bold
+!URxvt.font       : xft:monospace:size=16:style=Regular
+!URxvt.italicFont : xft:monospace:size=16:style=Italic
+!URxvt.boldFont   : xft:monospace:size=16:style=Bold
 
 !URxvt.font:                       	9x15,xft:TerminessTTFNerdFontMono
 
