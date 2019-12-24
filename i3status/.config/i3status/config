@@ -40,7 +40,8 @@ volume_status {
 
 wireless _first_ {
         #format_up = "W: (%quality at %essid) %ip"
-        format_up = "  %essid - %quality "
+        #format_up = "  %essid-%quality "
+        format_up = " %quality "
         format_down = "W: down"
 }
 
