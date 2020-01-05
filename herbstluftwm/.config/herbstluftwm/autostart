@@ -38,6 +38,7 @@ hc keybind $Mod-Return spawn ${TERMINAL:-xterm} # use your $TERMINAL with xterm 
 
 hc keybind $Mod-p spawn rofi -show drun
 hc keybind $Mod-d spawn rofi -show run
+hc keybind Alt+Escape spawn rofi -combi-modi window,drun -show combi -modi combi
 hc keybind $Mod-F11 spawn ~/.config/herbstluftwm/restartpanels.sh
 hc keybind $Mod-grave        use_previous
 
