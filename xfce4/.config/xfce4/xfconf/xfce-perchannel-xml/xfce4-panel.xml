@@ -103,7 +103,7 @@
     <property name="plugin-7" type="string" value="whiskermenu"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chrome.instance1228;chrome.instance12343;chrome.instance14196;chrome.instance1695;chrome.instance30587;chrome.instance37701;chrome.instance3872;chrome.instance5705;chrome.instance7528;smplayer"/>
+      <property name="mpris-players" type="string" value="chrome.instance1228;chrome.instance12343;chrome.instance14196;chrome.instance1465;chrome.instance1695;chrome.instance30587;chrome.instance37701;chrome.instance3872;chrome.instance5705;chrome.instance7528;smplayer"/>
       <property name="show-notifications" type="bool" value="true"/>
       <property name="enable-wnck" type="bool" value="false"/>
       <property name="enable-multimedia-keys" type="bool" value="false"/>

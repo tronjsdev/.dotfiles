@@ -5,6 +5,10 @@
 row=5
 col=0
 
+[/home/tronjs/Desktop/Back.jpg]
+row=2
+col=2
+
 [/home/tronjs/Desktop/UACF-4-week-Intro-Running-Plan-cal-3.jpg]
 row=3
 col=1
@@ -41,32 +45,36 @@ col=1
 row=0
 col=1
 
+[/home/tronjs/Desktop/Front.jpg]
+row=1
+col=2
+
 [/home/tronjs/Desktop/sickfits]
 row=0
 col=2
 
-[C46AE0436AE03438]
-row=3
+[9E58AD2158ACF8E3]
+row=1
+col=0
+
+[C42ECFF92ECFE292]
+row=4
 col=0
 
 [01D2611C6B5CFB40]
 row=0
 col=0
 
-[546E6AA46E6A7F1C]
-row=2
+[C46AE0436AE03438]
+row=3
 col=0
 
 [1EE6-30E8]
 row=6
 col=1
 
-[C42ECFF92ECFE292]
-row=4
-col=0
-
-[9E58AD2158ACF8E3]
-row=1
+[546E6AA46E6A7F1C]
+row=2
 col=0
 
 [Trash]
