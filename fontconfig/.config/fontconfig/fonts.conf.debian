@@ -6,7 +6,7 @@
   
   <!-- ALIAS -->
   <!--==========================-->
-  <alias>
+  <!--<alias>
     <family>serif</family>
     <prefer>
       <family>IBM Plex Serif</family>
@@ -23,16 +23,16 @@
     <prefer>
       <family>Ubuntu</family>
     </prefer>
-  </alias>
+  </alias>-->
   <alias>
     <family>monospace</family>
     <prefer>
       <family>JetBrains Mono</family>
     </prefer>
   </alias>
-  
-  
-  <!-- HINTING AND MORE... -->
+
+
+ <!-- HINTING AND MORE... -->
   <!--==========================-->
   <match target="font">
     <edit name="antialias" mode="assign">
@@ -70,7 +70,6 @@
     </edit>
   </match>
   
-  
   <!-- DEFAULT MONOSPACE FONT SIZE -->
   <!--==========================-->
   <match target="font">
@@ -81,57 +80,17 @@
       <double>16</double>
     </edit>
   </match>
-  
-  <!-- ALIASES FOR COMMONLY USED MS FONTS. -->
+
+<!-- FORCE TO USE JetBrains Mono FONT -->
   <!--==========================-->
-  <match>
-    <test qual="any" name="family" compare="eq">
-      <string>Arial</string>
-      <string>Helvetica</string>
-      <string>Verdana</string>
-      <string>Tahoma</string>
-      <string>Comic Sans MS</string>
-    </test>
-    <edit name="family" mode="assign" binding="same">
-      <string>Ubuntu</string>
-    </edit>
-  </match>
-  
-  <match>
-    <test name="family">
-      <string>Times New Roman</string>
-    </test>
-    <edit name="family" mode="assign" binding="same">
-      <string>IBM Plex Serif</string>
-    </edit>
-  </match>
-  
-  <match>
-    <test name="family">
-      <string>Times</string>
-    </test>
-    <edit name="family" mode="assign" binding="same">
-      <string>IBM Plex Serif</string>
-    </edit>
-  </match>
-  
-  <match>
-    <test name="family">
-      <string>Courier New</string>
-    </test>
-    <edit name="family" mode="assign" binding="same">
-      <string>JetBrains Mono</string>
-    </edit>
-  </match>
-  
-  <!-- FORE TO USE JetBrains Mono FONT -->
-  <!--==========================-->
-  <match>
+  <match target="pattern">
     <test qual="any" name="family" compare="eq">
       <string>DejaVu Sans Mono</string>
       <string>SFMono-Regular</string>
       <string>Consolas</string>
+      <string>Menlo</string>
       <string>Liberation Mono</string>
+      <string>Courier New</string>
     </test>
     <edit name="family" mode="assign" binding="same">
       <string>JetBrains Mono</string>
@@ -142,7 +101,37 @@
   </match>
 
 
+<alias>
+    <family>serif</family>
+    <prefer>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>sans-serif</family>
+    <prefer>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>monospace</family>
+    <prefer>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
 
+<alias>
+    <family>sans-serif</family>
+    <prefer>
+      <family>Cantarell</family>
+    </prefer>
+  </alias>
+<alias>
+    <family>sans</family>
+    <prefer>
+      <family>Cantarell</family>
+    </prefer>
+  </alias>
 <!--  <match>
 
     <test qual="any" name="pixelsize" compare="less">
